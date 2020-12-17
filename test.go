@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"./file_import"
+	"file_import"
 )
 
 func main() {
