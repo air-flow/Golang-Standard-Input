@@ -35,7 +35,7 @@ func run() error {
 		defer f.Close()
 		r = f
 	}
-	t, err := ioutil.ReadAll(r)
+	t, err := ioutil.ReadFile(r)
 	if err != nil {
 		fmt.Printf("%#v", err)
 		return err
