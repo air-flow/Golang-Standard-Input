@@ -1,10 +1,9 @@
 package main
 
 import (
+	"file_import"
 	"fmt"
 	"log"
-
-	"file_import"
 )
 
 func main() {
