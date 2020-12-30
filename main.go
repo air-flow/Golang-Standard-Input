@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"file_import/file_import"
+	"./file_import"
 )
 
 func sliceAtoi(sa []string) []int {
@@ -45,5 +45,5 @@ func temp() {
 }
 
 func main() {
-	file_import.Test_Log()
+	file_import.TestLog()
 }
