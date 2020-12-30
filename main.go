@@ -5,6 +5,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"file_import/file_import"
 )
 
 func sliceAtoi(sa []string) []int {
@@ -15,8 +17,8 @@ func sliceAtoi(sa []string) []int {
 	}
 	return si
 }
-func main() {
 
+func temp() {
 	in := [...]string{"2010 12 30 0 0", "2018 12 30 0 0"}
 	// in_slice := [...][...]string{}
 	inslice := make([][]int, 2)
@@ -40,4 +42,8 @@ func main() {
 	mins := int(duration.Minutes()) % 60
 	fmt.Println(year, month, days, hours, mins)
 	fmt.Println((hours0 / 24) % 365)
+}
+
+func main() {
+	file_import.Test_Log()
 }
